@@ -1,0 +1,27 @@
+{
+    "title": "Landing Page development scripts",
+    "name": "landing-page-dev-scripts",
+    "version": "1.0.0",
+    "description": "An HTML landing page development environment based on Tailwind",
+    "scripts": {
+        "start": "gulp watch",
+        "deploy": "gulp deploy"
+    },
+    "author": "Pablo Miceli <d1urno@gmx.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "del": "4.0.0",
+        "gulp": "4.0.0",
+        "gulp-autoprefixer": "6.0.0",
+        "gulp-clean-css": "4.0.0",
+        "gulp-line-ending-corrector": "^1.0.3",
+        "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "^8.0.0",
+        "gulp-purgecss": "^1.2.0",
+        "gulp-rename": "1.4.0",
+        "merge-stream": "^1.0.1",
+        "@fullhuman/postcss-purgecss": "^1.2.0",
+        "tailwindcss": "^1.0.3"
+    }
+}
