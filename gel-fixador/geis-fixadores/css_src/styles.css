@@ -1,0 +1,136 @@
+@import "./porcentual-margins.css";
+@import "./porcentual-positions.css";
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/*============================== Global configuration ==============================*/
+
+@font-face {
+  font-family: "BebasNeue";
+  font-display: auto;
+  font-weight: 400;
+  font-style: normal;
+  src: local("BebasNeue"), url(../fonts/BebasNeue-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  font-display: auto;
+  font-weight: 700;
+  font-style: normal;
+  src: local("BebasNeue"), url(../fonts/BebasNeue-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Swiss721BT";
+  font-display: auto;
+  font-weight: 300;
+  font-style: normal;
+  src: local("Swiss721BT"), url(../fonts/Swiss721BT-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Swiss721BT";
+  font-display: auto;
+  font-weight: 700;
+  font-style: normal;
+  src: local("Swiss721BT"), url(../fonts/Swiss721BT-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "GothamRounded";
+  font-display: auto;
+  font-weight: 400;
+  font-style: normal;
+  src: local("GothamRounded"), url(../fonts/GothamRounded-Book.otf) format("opentype");
+}
+
+html {
+  font-size: 22px;
+}
+
+@screen md {
+  html {
+    font-size: 23px;
+  }
+}
+
+@screen lg {
+  html {
+    font-size: 25px;
+  }
+}
+
+@screen xl {
+  html {
+    font-size: 28px;
+  }
+}
+
+body {
+  max-width: 1500px;
+  min-width: 360px;
+  @apply m-auto
+}
+
+header,section,footer {
+  @apply relative
+}
+
+img {
+  @apply w-full;
+}
+
+h1 {
+  font-family: 'BebasNeue', Arial, sans-serif;
+  @apply text-4xl;
+  @apply font-bold;
+  @apply leading-none !important;
+}
+
+h2 {
+  font-family: 'BebasNeue', Arial, sans-serif;
+  @apply text-lg;
+  @apply leading-none !important;
+}
+
+p {
+  font-family: 'Swiss721BT', Arial, sans-serif;
+  @apply font-light;
+  @apply text-xs;
+  @apply leading-tight !important;
+}
+
+p.desc {
+  font-size: .5rem;
+}
+
+/*============================== Project styling ==============================*/
+
+.bg-gradient {
+  background: rgb(187,187,187);
+  background: linear-gradient(
+              0deg, rgba(187,187,187,1) 0%, 
+                    rgba(207,207,207,1) 30%, 
+                    rgba(212,212,212,1) 70%, 
+                    rgba(209,209,209,1) 100%);
+}
+
+.top-logo {
+  max-width: 13rem;
+}
+
+@screen md {  
+  .top-logo {
+    max-width: 18rem;
+  }
+
+  .text-description {
+    width: 44vw;
+    max-width: 337px;
+  }
+}
